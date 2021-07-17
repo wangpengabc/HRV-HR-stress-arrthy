@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+    maven { url "https://maven.google.com" }
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+
+    compile files('libs/antpluginlib_3-5-0.jar')
+    compile 'com.github.clans:fab:1.6.4'
+    compile files('libs/hrvlib.jar')
+    compile files('libs/commons-math3-3.6.1.jar')
+    compile files('libs/commons-math3-3.6.1-tools.jar')
+    compile files('libs/commons-math3-3.6.1-javadoc.jar')
+
+    compile 'com.googlecode.json-simple:json-simple:1.1.1'
+}
+
+test {
+    useJUnitPlatform()
+}

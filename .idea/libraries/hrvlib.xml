@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hrvlib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/hrvlib.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
