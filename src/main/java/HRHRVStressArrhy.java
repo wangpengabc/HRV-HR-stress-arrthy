@@ -60,6 +60,7 @@ public class HRHRVStressArrhy {
         HRVParameter  hf_parameter = facade_calc.getHF();
 
         System.out.println("------------test begin -------");
+        System.out.println("------------use self-designed Welch based PowerSpectrum Algorithm -------");
         System.out.println("name:" + lf_parameter.getName());
         System.out.println("value:" + lf_parameter.getValue());
         System.out.println("unit:" + lf_parameter.getUnit());
